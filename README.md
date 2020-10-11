@@ -7,12 +7,20 @@ Vue + VueX + Vue-Router + Element-Ui + Axios + express + MongoDB + Flex + Vue-Am
 # 3 项目运行
 注意：由于涉及到 ES6/7 等新属性，node 需要 6.0 以上版本  
 运行改项目需提前安装 Node、npm   
+前端：  
 ```
 # git clone https://github.com/1007821840/cbux.git      
-# cd vue2-elm cd到当前目录  
+# cd cbux cd到当前目录  
 # npm install 安装依赖   
 # npm run serve  
 ```  
+连接数据库：  
+```
+# cd server
+# npm install   
+# npm start  
+
+
 # 关于接口数据
 
 此项目的所有接口数据都来源于json
