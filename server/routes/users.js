@@ -26,5 +26,21 @@ router.post('/login', function(req, res, next) {
     });
     
 });
+//注册
+router.post('/register', function(req, res, next) {
+    var password = req.body.password;
+    var username = req.body.username;
+
+    handler(req, res, "user", {name: username,password: password},function(data){
+        if(data.length!=0){
+            res.end('{"success":"true"}');
+        }else{
+            res.end('{"err":"抱歉，系统中已经有了"}');
+        }
+      
+        
+    });
+    
+});
 
 module.exports = router;

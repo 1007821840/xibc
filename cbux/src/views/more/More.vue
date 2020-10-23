@@ -10,17 +10,17 @@
       <div>
           <ul class="one">
               <li class="oneone">
-                  <a href="http://localhost:8081/store">
+                  <a href="http://localhost:8080/store">
                       {{list[0]}}
                   </a>
               </li>
               <li>
-                <a href="http://localhost:8081/money/starbucks-rewards">
+                <a href="http://localhost:8080/money/starbucks-rewards">
                     {{list[1]}}
                 </a>
             </li>
             <li>
-                <a href="http://localhost:8081/menu">
+                <a href="http://localhost:8080/menu">
                     {{list[2]}}
                 </a>
             </li>
@@ -75,14 +75,14 @@
       </div>
       <div class="foot">
       <div class="foot1">
-        <a href="http://localhost:8081/money">
+        <a href="http://localhost:8080/money">
           <img src="../../assets/icons/icon-account.svg" class="img">
         </a>
           <span>登录</span>
          
       </div>
       <div class="foot2">
-          <a href="http://localhost:8081/money/register">
+          <a href="http://localhost:8080/money/register">
           <span>注册</span>
           </a>
       </div>

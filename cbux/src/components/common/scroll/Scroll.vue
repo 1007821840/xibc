@@ -32,7 +32,8 @@
             this.scroll = new BScroll(this.$refs.wrapper, {
                 click: true,
                 probeType: this.probeType,
-                pullUpLoad: this.pullUpLoad
+                pullUpLoad: this.pullUpLoad,
+                mouseWheel: true
             })
             this.scroll.on('scroll', (position) => {
                 //   console.log(position);

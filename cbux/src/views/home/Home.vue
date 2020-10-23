@@ -18,8 +18,8 @@
         <h2>1912 派克街 | 咖啡星讲堂</h2>
         <p>了解更多星巴克咖啡文化</p>
       </div>
-      <home-coffeehouse/>
       </scroll>
+      <home-coffeehouse/>
   </div>
 </template>
 

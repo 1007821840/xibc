@@ -7,7 +7,7 @@
                   <img src="../../../assets/icons/icon-pin-solid-grey.svg">
               </div>
               <div class="items2">
-              <div>{{item.StoreName}}</div>
+              <div @click="pathss(index)">{{item.StoreName}}</div>
               <div>{{item.StreetAddress}}</div>
               </div>
               <div class="items3">
@@ -37,11 +37,16 @@ export default {
   mounted () {},
   methods: {
       paths(index){
-         
           this.$store.commit('index',index)
           this.$store.commit('items',this.items)
           this.$router.push("./stores")
+      },
+      pathss(index){
+          this.$store.commit('mapp',this.items[index])
+
+       
       }
+
   }
 }
 </script>

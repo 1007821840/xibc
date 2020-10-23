@@ -1,5 +1,5 @@
 <template>
-  <div path="/login" id="MoneyLogin">
+  <div path="/login" id="MoneyLogin" v-if="shows">
     <div class="login">
       <div class="login-less">
       <div class="inp1">
@@ -45,10 +45,11 @@
     name: "MoneyLogin",
     data() {
       return {
+        shows:true,
         username:'',
         password:'',
         tel: "用户名或电子邮箱",
-        password: '密码',
+        password: '',
         autoLogin: true,
         outerVisible: false,
         ble:false
@@ -76,8 +77,14 @@
 					if(result.data.err){
 						alert(result.data.err);
 					}else{
-            console.log('nice');
-						_this.$router.push({path:'/money/register'});
+            if(_this.ble==false){
+              alert('请滑动验证')
+            }
+            else{
+              console.log(_this.ble);
+						_this.$router.push({path:'/menu'});
+
+            }
 					}
 					_this.disablebtn = false;
 					_this.loginText = "登录";

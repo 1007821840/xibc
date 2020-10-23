@@ -8,6 +8,10 @@ const store = new Vuex.Store({
 	state: {
 		items:[],
 		it:{},
+		mapp:{},
+		maplat:'40.11947',
+		maplon:'116.25114',
+		maptext:'当前位置',
 		index:0,
 		path: ['/', '/stores', '/money/login', '/menu', 
 			   '/money/register', '/money/starbucks-rewards', '/money/activity', '/money/rewards', '/money/profile',
@@ -41,6 +45,13 @@ const store = new Vuex.Store({
 		items(state,it){
 			state.items=it;
 			console.log(state.items);
+		},
+		mapp(state,item){
+			state.mapp=item;
+			state.maplat=item.Latitude
+			state.maplon=item.Longitude
+			state.maptext=item.StoreName
+			console.log(state.mapp);
 		}
     }
 	

@@ -53,9 +53,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="loading-svg mbMedia-loadmore">
-          <img src="../../assets/loading-svg/loading-bubbles.svg" :class="{'hidden': hidden}" />
-        </div> -->
       </section>
     </section>
   </div>

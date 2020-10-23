@@ -9,10 +9,12 @@
     <div>{{ details.ProductName}}</div>
     <div>猜你喜欢</div>
     <div></div>
+    <home-coffeehouse/>
   </div>
 </template>
 
 <script>
+   import HomeCoffeehouse from './HomeCoffeehouse'
     import NavBaro from '@/components/common/navbar/NavBaro.vue'
 export default {
     
@@ -28,6 +30,7 @@ export default {
       }
   },
   components: {
+    HomeCoffeehouse,
     NavBaro
   },
   mounted () {

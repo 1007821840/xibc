@@ -1,5 +1,5 @@
 <template>
-    <div id="moneytab" v-if="false">
+    <div id="moneytab" >
         <div class="ssj">
           <div v-for="it in list" >
             <div class="guany">
@@ -60,17 +60,17 @@ export default {
 
   #moneytab {
     position: absolute;
-   bottom:600px ;
+   bottom: 0;
     left: 0;
     right: 0;
     overflow-x: auto;
     white-space: nowrap;
-    height: 300px;
+    /* height: 43px; */
     overflow-y: hidden;
   }
 
   .ssj {
-    height: 320px;
+    /* height: 46px; */
     scrollbar-width: none;
     display: flex;
   }
@@ -90,6 +90,10 @@ export default {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.56);
   }
-   
+.guany img{
+  border-radius: 50px;
+  width: 100vw;
   
+
+}
 </style>
